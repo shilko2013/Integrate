@@ -58,7 +58,7 @@ public class IntegralIO {
             try {
                 System.out.print("Введите левую границу: ");
                 String token = in.next();
-                leftBound = Double.parseDouble(token);
+                leftBound = Double.parseDouble(token.replaceAll(",","."));
                 break;
             } catch (Exception e) {
                 System.out.println("Неверное число с плавающей запятой, повторите ввод.");
@@ -69,7 +69,7 @@ public class IntegralIO {
             try {
                 System.out.print("Введите правую границу: ");
                 String token = in.next();
-                rightBound = Double.parseDouble(token);
+                rightBound = Double.parseDouble(token.replaceAll(",","."));
                 break;
             } catch (Exception e) {
                 System.out.println("Неверное число с плавающей запятой, повторите ввод.");
@@ -80,7 +80,7 @@ public class IntegralIO {
             try {
                 System.out.print("Введите необходимую точность: ");
                 String token = in.next();
-                precision = Double.parseDouble(token);
+                precision = Double.parseDouble(token.replaceAll(",","."));
                 break;
             } catch (Exception e) {
                 System.out.println("Неверное число с плавающей запятой, повторите ввод.");
