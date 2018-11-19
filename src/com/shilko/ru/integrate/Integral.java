@@ -26,6 +26,7 @@ public class Integral {
     }
 
     public static Results integrate(double leftBound, double rightBound, DoubleFunctor func, double precision, Method method) {
+        precision /= 10;
         double prev = 0; //NaN is a sign of first loop
         double accumulator = 0;
         double accuracy = 0;
